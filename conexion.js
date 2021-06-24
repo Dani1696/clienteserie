@@ -2,7 +2,7 @@
 
 // 1. url del servicio
 
-let url="http://localhost/apiSura/framework-4.1.3/public/personajes";
+let url="http://localhost/api/api-main/public/personajes";
 
 // 2. armamos la petición
 
