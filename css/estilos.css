@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.barra > a {
+    text-decoration: none;
+    color:white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  
+  }
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(211, 211, 211, 0.123) 0%, rgba(211, 211, 211, 0.151) 1%, rgba(224, 224, 224, 0.164) 26%, rgba(239, 239, 239, 0.123) 48%, rgba(217, 217, 217, 0.144) 75%, rgba(188, 188, 188, 0.151) 100%), url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.spread{
+    transform: translate(0);
+}
+
+
+
+ .parte1{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .parte1 img{
+     margin-top: 4rem;
+     width: 40%;
+ }
+
+ .parte2{
+     width: 45%;
+ }
+
+ .introduccion{
+     margin-bottom: 20px;
+ }
+
+ .titulo1{
+     margin-bottom: 7px;
+     color: teal;
+     margin-top: 2rem;
+ }
+
+
+ .seccion2{
+     background: #f2f2f2;
+ }
+
+ .galeria{
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
+
+ .img-galeria{
+     object-fit: cover;
+     width: 30%;
+     display: block;
+     margin-bottom: 40px;
+     box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+     cursor: pointer;
+ }
+
+ .titulo2{
+     text-align: center;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     font-size: 40px;
+     color: teal;
+ }
+
+ .seccion3{
+     position: fixed;
+     width: 100px;
+     height: 100%;
+     top: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform: translate(100%);
+     transition: transform .2s ease-in-out;
+ }
+
+ .show{
+     transform: translate(0);
+ }
+
+ .agregar-imagen{
+    object-fit: cover;
+     width: 60%;
+     border-radius: 10px;
+     transform: scale(0);
+     transition: transform .3s .2s;
+ }
+
+ .showimage{
+     transform: scale(1);
+ }
+
+
+footer{
+    margin-top: 100px;
+    padding-bottom: 0.1px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+
+.contenedor3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contacto{
+    width: 40%;
+    color: #fff;
+}
+
+.derechos{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.derechos+p{
+    font-weight: 500;
+}
+
+.redes{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redesiconos{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.redesiconos:hover{
+    background: #fff;
+    color: cornflowerblue;
+}
+
+.redesiconos i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.linea{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu{
+        width: 50vw;
+    }
+
+    .parte1{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .parte1 img{
+        width: 80%;
+    }
+
+    .parte2{
+        width: 80%;
+    }
+
+    .introduccion{
+        margin-bottom:  30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .contenedor3{
+        justify-content: center;
+    }
+
+    .redes{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .redesiconos{
+        margin-left: 0;
+
+    }
+    
+    .redesiconos i{
+        margin-left: 0;
+    }
+
+    .contacto{
+        text-align: center;
+        width: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu{
+        width: 65vw;
+    }
+
+    .iconomenu{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo2{
+        font-size: 30px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+    
+    .img-galeria{
+        width: 95%;
+    }
+
+    .redes{
+        width: 100%;
+    }
+
+    .contacto{
+        width: 90%;
+    }
+}
